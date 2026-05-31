@@ -1,19 +1,23 @@
 {
   "config": {
     "siteName": "KBIOS",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/256px-React-icon.svg.png",
     "year": 2026,
 
     "theme": {
       "bg": "#030303",
-      "surface": "rgba(15,15,15,0.7)",
+      "surface": "rgba(15,15,15,0.75)",
       "primary": "#ffffff",
       "accent": "#0078d4"
     },
 
-    "heroTitle": "KBIOS ECOSYSTEM",
+    "heroTitle": "KBIOS Ecosystem",
     "heroSub": "Create • Play • Download • Open Source",
-    "heroBg": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop"
+
+    "stats": {
+      "projects": 4,
+      "downloads": 1284,
+      "repositories": 6
+    }
   },
 
   "nav": [
@@ -44,41 +48,60 @@
     {
       "label": "Docs",
       "url": "#docs"
+    },
+    {
+      "label": "Community",
+      "url": "#community"
     }
   ],
 
   "sections": [
     {
-      "id": "highlight",
+      "id": "featured",
       "title": "Featured Projects",
+
       "items": [
         {
-          "title": "KBIOS Quantum",
-          "desc": "ระบบปฏิบัติการแห่งอนาคต ปราศจากความหน่วง",
-          "image": "https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=1000&auto=format&fit=crop",
-          "link": "kbios/index.html",
-          "badge": "OS"
-        },
-        {
-          "title": "Godot K-Edition",
-          "desc": "เอนจินพัฒนาเกมรุ่นปรับแต่งพิเศษสำหรับ KBIOS",
-          "image": "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?q=80&w=1000&auto=format&fit=crop",
-          "link": "engine/index.html",
-          "badge": "Engine"
-        },
-        {
           "title": "HTML Builder",
-          "desc": "สร้างเว็บไซต์ HTML CSS JavaScript ได้ในไม่กี่คลิก",
-          "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1000&auto=format&fit=crop",
-          "link": "htmlbuilder/index.html",
-          "badge": "App"
+          "desc": "Generate HTML, CSS and JavaScript websites with a visual builder.",
+          "badge": "Software",
+          "link": "htmlbuilder/index.html"
         },
         {
           "title": "PDF Player",
-          "desc": "อ่านและจัดการไฟล์ PDF ผ่านเว็บเบราว์เซอร์",
-          "image": "https://images.unsplash.com/photo-1517842645767-c639042777db?q=80&w=1000&auto=format&fit=crop",
-          "link": "pdfplayer/index.html",
-          "badge": "Tool"
+          "desc": "Open and read PDF files directly in your browser.",
+          "badge": "Tool",
+          "link": "pdfplayer/index.html"
+        },
+        {
+          "title": "KBIOS Quantum",
+          "desc": "Experimental operating system project.",
+          "badge": "OS",
+          "link": "kbios/index.html"
+        },
+        {
+          "title": "KBIOS Engine",
+          "desc": "Game development toolkit and engine ecosystem.",
+          "badge": "Engine",
+          "link": "engine/index.html"
+        }
+      ]
+    },
+
+    {
+      "id": "downloads",
+      "title": "Latest Downloads",
+
+      "items": [
+        {
+          "title": "HTML Builder",
+          "version": "1.0.0",
+          "size": "2.4 MB"
+        },
+        {
+          "title": "PDF Player",
+          "version": "1.0.0",
+          "size": "1.8 MB"
         }
       ]
     }
@@ -101,14 +124,6 @@
       {
         "label": "FAQ",
         "url": "faq/index.html"
-      },
-      {
-        "label": "Support",
-        "url": "support/index.html"
-      },
-      {
-        "label": "Blog",
-        "url": "blog/index.html"
       },
       {
         "label": "Roadmap",
@@ -156,16 +171,6 @@
         "icon": "fa-brands fa-x-twitter",
         "url": "https://x.com",
         "tip": "X"
-      },
-      {
-        "icon": "fa-brands fa-reddit",
-        "url": "https://reddit.com",
-        "tip": "Reddit"
-      },
-      {
-        "icon": "fa-brands fa-telegram",
-        "url": "https://telegram.org",
-        "tip": "Telegram"
       }
     ]
   }
