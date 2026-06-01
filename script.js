@@ -1,1 +1,233 @@
-document.addEventListener("DOMContentLoaded",()=>{const e=document.getElementById("navbar"),t=document.getElementById("progress-bar"),n=document.getElementById("scroll-progress"),o=document.getElementById("custom-context"),r=document.getElementById("mobile-menu-btn"),c=document.getElementById("mobile-menu");let a=0;const s=()=>{const o=window.scrollY,r=document.documentElement.scrollHeight-window.innerHeight;if(r>0){const e=283-(o/r)*283;t.style.strokeDashoffset=Math.max(0,e)}o>a&&o>100?(e.classList.add("hidden"),c.classList.remove("active")):(e.classList.remove("hidden"),n.style.opacity=o>200?"1":"0"),a=o};window.addEventListener("scroll",s,{passive:!0}),document.addEventListener("contextmenu",e=>{e.preventDefault(),o.style.display="flex",o.style.left=`${e.pageX}px`,o.style.top=`${e.pageY}px`}),document.addEventListener("click",e=>{o.style.display="none",!c.contains(e.target)&&!r.contains(e.target)&&c.classList.remove("active")}),r.addEventListener("click",e=>{e.stopPropagation(),c.classList.toggle("active")});const i=async()=>{try{const e=Date.now(),t=await fetch("dataupdate.json",{cache:"no-cache"});if(!t.ok)throw new Error("JSON Fetch Failed");const n=await t.json();document.documentElement.style.setProperty("--bg",n.config.theme.bg),document.documentElement.style.setProperty("--surface",n.config.theme.surface),document.documentElement.style.setProperty("--primary",n.config.theme.primary),document.documentElement.style.setProperty("--accent",n.config.theme.accent),d(n);const o=Date.now()-e,r=3e3-o;await new Promise(e=>setTimeout(e,r>0?r:0)),l()}catch(e){console.error(e),document.getElementById("full-loader").innerHTML=`<div style="text-align:center;color:#fff;z-index:999999;position:relative"><h2 style="margin-bottom:10px">SYSTEM FAULT</h2><p style="color:#aaa;margin-bottom:20px">Failed to boot KBIOS Ecosystem.</p><button onclick="location.reload()" style="padding:12px 35px;background:var(--accent);border:none;border-radius:30px;color:#fff;cursor:pointer;font-weight:900;letter-spacing:1px">REBOOT</button></div>`}},d=e=>{document.getElementById("site-title").textContent=`${e.config.siteName} Hub`,document.getElementById("nav-logo").src=e.config.logo,document.getElementById("nav-name").textContent=e.config.siteName;const t=document.getElementById("nav-links"),n=document.getElementById("mobile-links"),o=e.nav.slice(0,5),r=e.nav.slice(5);o.forEach(e=>{const n=document.createElement("div");n.className="nav-item",n.innerHTML=`<a href="${e.url}">${e.label}</a>`,t.appendChild(n)});if(r.length>0){const e=document.createElement("div");e.className="nav-item",e.innerHTML=`<a href="#" style="cursor:pointer">More <i class="fa-solid fa-angle-down" style="font-size:0.8rem"></i></a>`;const n=document.createElement("div");n.className="dropdown-menu",r.forEach(e=>{const t=document.createElement("a");t.href=e.url,t.textContent=e.label,n.appendChild(t)}),e.appendChild(n),t.appendChild(e)}e.nav.forEach(e=>{const t=document.createElement("a");t.href=e.url,t.textContent=e.label,n.appendChild(t)}),document.getElementById("hero-bg").style.backgroundImage=`url(${e.config.heroBg})`,document.getElementById("hero-title").textContent=e.config.heroTitle,document.getElementById("hero-sub").textContent=e.config.heroSub;const c=document.getElementById("content-sections");e.sections.forEach(e=>{const t=document.createElement("section");t.className="section",t.id=e.id;const n=document.createElement("h2");n.className="section-title",n.textContent=e.title,t.appendChild(n);const o=document.createElement("div");o.className="grid",e.items.forEach(e=>{const t=document.createElement("div");t.className="card";const n=document.createElement("div");if(n.className="card-media",e.video){const t=document.createElement("video");t.src=e.video,t.autoplay=!0,t.loop=!0,t.muted=!0,t.playsInline=!0,n.appendChild(t)}else if(e.image){const t=document.createElement("img");t.src=e.image,n.appendChild(t)}const r=document.createElement("div");if(r.className="card-content",e.badge){const t=document.createElement("div");t.className="card-badge",t.textContent=e.badge,n.appendChild(t)}const c=document.createElement("h3");c.className="card-title",c.textContent=e.title;const a=document.createElement("p");a.className="card-desc",a.textContent=e.desc;const s=document.createElement("a");s.className="card-link-layer",s.href=e.link;const i=document.createElement("button");i.className="card-more",i.innerHTML='Explore <i class="fa-solid fa-arrow-right"></i>',i.onclick=e=>{e.preventDefault(),e.stopPropagation(),a.classList.toggle("expanded"),i.innerHTML=a.classList.contains("expanded")?'Collapse <i class="fa-solid fa-arrow-up"></i>':'Explore <i class="fa-solid fa-arrow-right"></i>'},r.append(c,a,i),t.append(n,r,s),o.appendChild(t)}),t.appendChild(o),c.appendChild(t)});const a=document.getElementById("footer-links");e.footer.links.forEach(e=>{const t=document.createElement("a");t.href=e.url,t.textContent=e.label,a.appendChild(t)});const s=document.getElementById("footer-socials");e.footer.socials.forEach(e=>{const t=document.createElement("a");t.href=e.url,t.setAttribute("data-tippy-content",e.tip||"");const n=document.createElement("i");n.className=e.icon,t.appendChild(n),s.appendChild(t)}),document.getElementById("footer-copy").innerHTML=`&copy; ${e.config.siteName} Core Ecosystem ${e.config.year}`},l=()=>{const e=document.querySelector("main"),t=document.getElementById("footer");imagesLoaded(e,{background:!0},()=>{document.getElementById("full-loader").style.opacity="0",setTimeout(()=>{document.getElementById("full-loader").style.visibility="hidden",e.style.opacity="1",e.style.visibility="visible",t.style.opacity="1",t.style.visibility="visible",document.body.style.overflow="auto",m()},800)})},m=()=>{if("undefined"!=typeof tsParticles&&tsParticles.loadBasic("particles-js",{background:{color:{value:"transparent"}},particles:{color:{value:"#ffffff"},links:{color:"#ffffff",distance:150,enable:!0,opacity:0.05,width:1},move:{enable:!0,speed:0.8},number:{value:30},opacity:{value:0.1},size:{value:2}}}),"undefined"!=typeof tippy&&tippy("[data-tippy-content]",{animation:"scale",theme:"translucent"}),"undefined"!=typeof Lenis){const e=new Lenis({duration:1.8,easing:e=>Math.min(1,1.001-Math.pow(2,-10*e)),smooth:!0,touchMultiplier:2});function t(n){e.raf(n),requestAnimationFrame(t)}requestAnimationFrame(t)}"undefined"!=typeof VanillaTilt&&window.innerWidth>1024&&VanillaTilt.init(document.querySelectorAll(".card"),{max:10,speed:400,glare:!0,"max-glare":.25,scale:1.04,perspective:1500}),"undefined"!=typeof gsap&&"undefined"!=typeof ScrollTrigger&&(gsap.registerPlugin(ScrollTrigger),gsap.to(".hero-bg",{y:"50%",scale:1.2,ease:"none",scrollTrigger:{trigger:"#hero",start:"top top",end:"bottom top",scrub:!0}}),gsap.from(".hero-content > *",{y:80,opacity:0,duration:1.5,stagger:0.2,ease:"expo.out",delay:0.5}),gsap.utils.toArray(".section-title").forEach(e=>{gsap.from(e,{scrollTrigger:{trigger:e,start:"top 85%"},y:60,opacity:0,scale:0.9,duration:1.2,ease:"expo.out"})}),gsap.utils.toArray(".grid").forEach(e=>{gsap.from(e.querySelectorAll(".card"),{scrollTrigger:{trigger:e,start:"top 85%"},y:120,rotationX:15,opacity:0,scale:0.95,duration:1.5,stagger:0.2,ease:"expo.out"})}))};const u=setInterval(()=>{window.tsParticles&&window.imagesLoaded&&window.gsap&&window.ScrollTrigger&&window.VanillaTilt&&window.Lenis&&window.tippy&&(clearInterval(u),i())},100)});
+document.addEventListener("DOMContentLoaded", () => {
+    const e = document.getElementById("navbar"),
+          t = document.getElementById("custom-context"),
+          n = document.getElementById("mobile-menu-btn"),
+          o = document.getElementById("mobile-menu"),
+          a = document.getElementById("mega-menu-overlay");
+    let s = 0, i = !1;
+
+    window.addEventListener("scroll", () => {
+        const t = window.scrollY;
+        t > s && t > 80 && !i ? e.classList.add("hidden") : e.classList.remove("hidden");
+        s = t;
+    }, { passive: !0 });
+
+    document.addEventListener("contextmenu", e => {
+        e.preventDefault();
+        t.style.display = "flex";
+        t.style.left = `${e.pageX}px`;
+        t.style.top = `${e.pageY}px`;
+    });
+
+    document.addEventListener("click", ev => {
+        t.style.display = "none";
+    });
+
+    n.addEventListener("click", ev => {
+        ev.stopPropagation();
+        const isActive = o.classList.contains("active");
+        if (isActive) {
+            o.classList.remove("active");
+            i = !1;
+        } else {
+            o.classList.add("active");
+            a.style.display = "none";
+            document.querySelectorAll(".nav-item").forEach(el => { el.dataset.active = "0"; el.classList.remove("active"); });
+            i = !0;
+        }
+    });
+
+    const l = async () => {
+        try {
+            const res = await fetch("dataupdate.json", { cache: "no-cache" });
+            if (!res.ok) throw new Error("ERR");
+            const data = await res.json();
+            document.documentElement.style.setProperty("--bg", data.config.theme.bg);
+            document.documentElement.style.setProperty("--surface", data.config.theme.surface);
+            document.documentElement.style.setProperty("--primary", data.config.theme.primary);
+            document.documentElement.style.setProperty("--accent", data.config.theme.accent);
+            r(data);
+            c();
+        } catch (err) {
+            console.error(err);
+            document.body.innerHTML = `<div style="padding:2rem;text-align:center"><h2>System Error</h2><button onclick="location.reload()">Retry</button></div>`;
+        }
+    };
+
+    const buildMega = (items) => {
+        let html = "";
+        items.forEach(item => {
+            html += `<div class="mega-col"><h4>${item.label}</h4>`;
+            if (item.sub) {
+                item.sub.forEach(subItem => {
+                    html += `<a href="${subItem.url}">${subItem.label}</a>`;
+                });
+            }
+            html += `</div>`;
+        });
+        return html;
+    };
+
+    const buildAccordion = (items) => {
+        let html = "";
+        items.forEach(item => {
+            if (item.sub) {
+                html += `<div class="accordion-item">
+                    <button class="accordion-toggle">${item.label} <i class="fa-solid fa-chevron-down" style="font-size:0.8rem"></i></button>
+                    <div class="accordion-content">
+                        ${buildAccordion(item.sub)}
+                    </div>
+                </div>`;
+            } else {
+                html += `<a href="${item.url}" class="accordion-link">${item.label}</a>`;
+            }
+        });
+        return html;
+    };
+
+    const r = data => {
+        document.getElementById("site-title").textContent = data.config.siteName;
+        document.getElementById("nav-logo").src = data.config.logo;
+        document.getElementById("nav-name").textContent = data.config.siteName;
+
+        const navLinksContainer = document.getElementById("nav-links");
+        const mobileLinksContainer = document.getElementById("mobile-links");
+
+        data.mainNav.forEach((item) => {
+            const btn = document.createElement("button");
+            btn.className = "nav-item";
+            btn.innerHTML = `${item.label} <i class="fa-solid fa-chevron-down" style="font-size:0.6rem;margin-left:6px"></i>`;
+            btn.addEventListener("click", ev => {
+                ev.stopPropagation();
+                const isActive = a.style.display === "grid" && btn.dataset.active === "1";
+                document.querySelectorAll(".nav-item").forEach(el => { el.dataset.active = "0"; el.classList.remove("active"); });
+                o.classList.remove("active");
+                
+                if (isActive) {
+                    a.style.display = "none";
+                    i = !1;
+                } else {
+                    btn.classList.add("active");
+                    btn.dataset.active = "1";
+                    a.innerHTML = buildMega(item.sub);
+                    a.style.display = "grid";
+                    i = !0;
+                }
+            });
+            navLinksContainer.appendChild(btn);
+        });
+
+        const rBtn = document.getElementById("desktop-all-btn");
+        rBtn.addEventListener("click", ev => {
+            ev.stopPropagation();
+            const isActive = a.style.display === "grid" && rBtn.dataset.active === "1";
+            document.querySelectorAll(".nav-item").forEach(el => { el.dataset.active = "0"; el.classList.remove("active"); });
+            o.classList.remove("active");
+
+            if (isActive) {
+                a.style.display = "none";
+                i = !1;
+            } else {
+                rBtn.classList.add("active");
+                rBtn.dataset.active = "1";
+                a.innerHTML = buildMega(data.allNav);
+                a.style.display = "grid";
+                i = !0;
+            }
+        });
+
+        mobileLinksContainer.innerHTML = buildAccordion([...data.mainNav, ...data.allNav]);
+        mobileLinksContainer.querySelectorAll('.accordion-toggle').forEach(btn => {
+            btn.addEventListener('click', (ev) => {
+                ev.stopPropagation();
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('i');
+                const isVisible = content.style.display === "block";
+                content.style.display = isVisible ? "none" : "block";
+                icon.style.transform = isVisible ? "rotate(0deg)" : "rotate(180deg)";
+            });
+        });
+
+        document.getElementById("hero-bg").style.backgroundImage = `url(${data.config.heroBg})`;
+        document.getElementById("hero-title").textContent = data.config.heroTitle;
+        document.getElementById("hero-sub").textContent = data.config.heroSub;
+
+        const sectionsContainer = document.getElementById("content-sections");
+        data.sections.forEach(sec => {
+            const sectionEl = document.createElement("section");
+            sectionEl.className = "section";
+            sectionEl.id = sec.id;
+            const titleEl = document.createElement("h2");
+            titleEl.className = "section-title";
+            titleEl.textContent = sec.title;
+            sectionEl.appendChild(titleEl);
+            
+            const gridEl = document.createElement("div");
+            gridEl.className = "grid";
+            sec.items.forEach(item => {
+                const cardEl = document.createElement("div");
+                cardEl.className = "card";
+                const mediaEl = document.createElement("div");
+                mediaEl.className = "card-media";
+                if (item.image) mediaEl.innerHTML += `<img src="${item.image}">`;
+                if (item.video) mediaEl.innerHTML += `<video src="${item.video}" loop muted playsinline autoplay class="has-vid" ${!item.image ? 'style="opacity:1;z-index:1"' : ""}></video>`;
+                
+                const contentEl = document.createElement("div");
+                contentEl.className = "card-content";
+                if (item.badge) contentEl.innerHTML += `<div class="card-badge">${item.badge}</div>`;
+                contentEl.innerHTML += `<h3 class="card-title">${item.title}</h3><p class="card-desc">${item.desc}</p><button class="card-more">Explore <i class="fa-solid fa-angle-right"></i></button>`;
+                
+                cardEl.innerHTML += `<a class="card-link-layer" href="${item.link}"></a>`;
+                cardEl.append(mediaEl, contentEl);
+                gridEl.appendChild(cardEl);
+            });
+            sectionEl.appendChild(gridEl);
+            sectionsContainer.appendChild(sectionEl);
+        });
+
+        const fLinks = document.getElementById("footer-links");
+        data.footer.links.forEach(link => { fLinks.innerHTML += `<a href="${link.url}">${link.label}</a>`; });
+        
+        const fSocials = document.getElementById("footer-socials");
+        data.footer.socials.forEach(soc => { fSocials.innerHTML += `<a href="${soc.url}" data-tippy-content="${soc.tip}"><i class="${soc.icon}"></i></a>`; });
+        
+        document.getElementById("footer-copy").innerHTML = `&copy; ${data.config.siteName} ${data.config.year}`;
+    };
+
+    const c = () => {
+        imagesLoaded(document.body, { background: !0 }, () => {
+            const app = document.getElementById("app");
+            const footer = document.getElementById("footer");
+            app.style.opacity = "1";
+            app.style.visibility = "visible";
+            app.style.transform = "translateY(0)";
+            footer.style.opacity = "1";
+            footer.style.visibility = "visible";
+            document.body.style.overflow = "auto";
+            d();
+        });
+    };
+
+    const d = () => {
+        if (typeof tippy !== "undefined") tippy("[data-tippy-content]", { animation: "scale", theme: "light" });
+        if (typeof Lenis !== "undefined") {
+            const lenis = new Lenis({ duration: 1.2, easing: e => Math.min(1, 1.001 - Math.pow(2, -10 * e)), smoothWheel: !0, touchMultiplier: 2 });
+            function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
+            requestAnimationFrame(raf);
+        }
+        if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
+            gsap.registerPlugin(ScrollTrigger);
+            gsap.to(".hero-bg", { y: "20%", ease: "none", scrollTrigger: { trigger: "#hero", start: "top top", end: "bottom top", scrub: !0 } });
+            gsap.from(".hero-content > *", { y: 30, opacity: 0, duration: 1, stagger: .1, ease: "power3.out", delay: .2 });
+            gsap.utils.toArray(".section-title").forEach(el => { gsap.from(el, { scrollTrigger: { trigger: el, start: "top 85%" }, y: 20, opacity: 0, duration: .8, ease: "power3.out" }); });
+            gsap.utils.toArray(".grid").forEach(el => { gsap.from(el.querySelectorAll(".card"), { scrollTrigger: { trigger: el, start: "top 85%" }, y: 40, opacity: 0, duration: 1, stagger: .1, ease: "power3.out" }); });
+        }
+    };
+
+    const m = setInterval(() => {
+        if (window.imagesLoaded && window.gsap && window.ScrollTrigger && window.Lenis) {
+            clearInterval(m);
+            l();
+        }
+    }, 50);
+});
