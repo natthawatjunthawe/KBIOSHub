@@ -20,7 +20,7 @@
         {
           "label": "แอปพลิเคชันเพื่อการทำงานและความคิดสร้างสรรค์",
           "sub": [
-            { "label": "bananathM Pack", "url": "/bananathmpack/index.html" },
+            { "label": "bananathM Pack", "url": "https://natthawatjunthawe.github.io/KBIOSHub/bananathmpack/index.html" },
             { "label": "Excel Advanced Analytics", "url": "#excel" },
             { "label": "PowerPoint AI Presenter", "url": "#powerpoint" },
             { "label": "Outlook Intelligent Mail", "url": "#outlook" },
