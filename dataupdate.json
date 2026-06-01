@@ -15,13 +15,13 @@
   },
   "mainNav": [
     {
-      "label": "Microsoft 365",
+      "label": "Web",
       "sub": [
         {
-          "label": "แอปพลิเคชันเพื่อการทำงานและความคิดสร้างสรรค์",
+          "label": "Programs",
           "sub": [
             { "label": "bananathM Pack", "url": "https://natthawatjunthawe.github.io/KBIOSHub/bananathMPack/" },
-            { "label": "Excel Advanced Analytics", "url": "#excel" },
+            { "label": "KBIOS Workspace", "url": "https://natthawatjunthawe.github.io/KBIOSHub/KBIOSWorkspace/" },
             { "label": "PowerPoint AI Presenter", "url": "#powerpoint" },
             { "label": "Outlook Intelligent Mail", "url": "#outlook" },
             { "label": "OneNote Digital Notebook", "url": "#onenote" },
