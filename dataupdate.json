@@ -15,27 +15,18 @@
   },
   "mainNav": [
     {
-      "label": "Web",
+      "label": "bananathM Pack",
       "sub": [
         {
           "label": "Programs",
           "sub": [
-            { "label": "bananathM Pack", "url": "https://natthawatjunthawe.github.io/KBIOSHub/bananathMPack/" },
-            { "label": "KBIOS Workspace", "url": "https://natthawatjunthawe.github.io/KBIOSHub/KBIOSWorkspace/" },
-            { "label": "PowerPoint AI Presenter", "url": "#powerpoint" },
-            { "label": "Outlook Intelligent Mail", "url": "#outlook" },
-            { "label": "OneNote Digital Notebook", "url": "#onenote" },
-            { "label": "Microsoft Publisher Pro", "url": "#publisher" }
+            { "label": "bananathM Pack", "url": "https://natthawatjunthawe.github.io/KBIOSHub/bananathMPack/" }
           ]
         },
         {
-          "label": "บริการคลาวด์และการทำงานร่วมกัน",
+          "label": "KBIOS Workspace",
           "sub": [
-            { "label": "Microsoft Teams Hub", "url": "#teams" },
-            { "label": "OneDrive Secure Cloud Storage", "url": "#onedrive" },
-            { "label": "SharePoint Team Portals", "url": "#sharepoint" },
-            { "label": "Microsoft Loop Workspace", "url": "#loop" },
-            { "label": "Viva Employee Experience", "url": "#viva" }
+            { "label": "KBIOS Workspace", "url": "https://natthawatjunthawe.github.io/KBIOSHub/KBIOSWorkspace/" }
           ]
         },
         {
