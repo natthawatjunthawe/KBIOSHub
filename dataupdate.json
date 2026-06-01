@@ -15,10 +15,10 @@
   },
   "mainNav": [
     {
-      "label": "bananathM Pack",
+      "label": "Programs",
       "sub": [
         {
-          "label": "Programs",
+          "label": "bananathM Pack",
           "sub": [
             { "label": "bananathM Pack", "url": "https://natthawatjunthawe.github.io/KBIOSHub/bananathMPack/" }
           ]
@@ -298,7 +298,6 @@
     ],
     "socials": [
       { "icon": "fa-brands fa-github", "url": "https://github.com", "tip": "KBIOS Open Source GitHub Repository" },
-      { "icon": "fa-brands fa-x-twitter", "url": "https://x.com", "tip": "ติดตามข่าวสารอัปเดตระบบผ่าน X" },
       { "icon": "fa-brands fa-linkedin", "url": "https://linkedin.com", "tip": "เครือข่ายธุรกิจและพันธมิตร LinkedIn" },
       { "icon": "fa-brands fa-youtube", "url": "https://youtube.com", "tip": "รับชมวิดีโอสาธิตฟังก์ชันบน YouTube" }
     ]
