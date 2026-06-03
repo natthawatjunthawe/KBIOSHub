@@ -30,12 +30,12 @@
           ]
         },
         {
-          "label": "ระบบความปลอดภัยและการจัดการองค์กร",
+          "label": "Download",
           "sub": [
-            { "label": "Microsoft Defender Antivirus", "url": "#security" },
-            { "label": "Microsoft Purview Compliance", "url": "#purview" },
-            { "label": "Microsoft Entra ID Access", "url": "#entra" },
-            { "label": "Microsoft Intune Management", "url": "#intune" }
+            { "label": "bananathM Pack", "url": "KBIOS" },
+            { "label": "KBIOS Workspace", "url": "KBIOS" },
+            { "label": "KBIOS ENGINE", "url": "ENGINE" },
+            { "label": "KBIOS OS", "url": "OS" }
           ]
         }
       ]
