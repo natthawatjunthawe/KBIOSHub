@@ -15,18 +15,18 @@
   },
   "mainNav": [
     {
-      "label": "Programs",
+      "label": "Programs Web",
       "sub": [
         {
           "label": "bananathM Pack",
           "sub": [
-            { "label": "bananathM Pack", "url": "https://natthawatjunthawe.github.io/KBIOSHub/bananathMPack/" }
+            { "label": "bananathM Pack", "url": "https://natthawatjunthawe.github.io/KBIOSHub/bananathMPakWeb/" }
           ]
         },
         {
           "label": "KBIOS Workspace",
           "sub": [
-            { "label": "KBIOS Workspace", "url": "https://natthawatjunthawe.github.io/KBIOSHub/KBIOSWorkspace/" }
+            { "label": "KBIOS Workspace", "url": "https://natthawatjunthawe.github.io/KBIOSHub/KBIOSWorkspaceWeb/" }
           ]
         },
         {
@@ -40,88 +40,6 @@
         }
       ]
     },
-    {
-      "label": "Copilot AI Hub",
-      "sub": [
-        {
-          "label": "ปัญญาประดิษฐ์สำหรับผู้ใช้ทั่วไป",
-          "sub": [
-            { "label": "Copilot Free Edition", "url": "#copilot-free" },
-            { "label": "Copilot Pro Subscription", "url": "#copilot-pro" },
-            { "label": "Copilot Voice Engine", "url": "#copilot-voice" },
-            { "label": "Designer Image Creator", "url": "#creator" }
-          ]
-        },
-        {
-          "label": "โซลูชันโมเดิร์น AI สำหรับภาคธุรกิจ",
-          "sub": [
-            { "label": "Copilot Studio Authoring", "url": "#copilot-studio" },
-            { "label": "Azure OpenAI Engine Access", "url": "#azure-openai" },
-            { "label": "Copilot for Microsoft 365", "url": "#copilot-m365" },
-            { "label": "Enterprise Security AI Layer", "url": "#ai-security" }
-          ]
-        },
-        {
-          "label": "โมเดลระดับลึกและเครื่องมือนักพัฒนา",
-          "sub": [
-            { "label": "Phi-3 Mini & Medium LLMs", "url": "#phi3" },
-            { "label": "ONNX Runtime Execution", "url": "#onnx" },
-            { "label": "DeepSpeed Optimization Kit", "url": "#deepspeed" },
-            { "label": "KBIOS Neural Processing Core", "url": "#kbios-neural" }
-          ]
-        }
-      ]
-    },
-    {
-      "label": "Windows 12 Platforms",
-      "sub": [
-        {
-          "label": "ระบบปฏิบัติการสำหรับคอมพิวเตอร์ส่วนบุคคล",
-          "sub": [
-            { "label": "Windows 12 Home Ultra", "url": "#win12-home" },
-            { "label": "Windows 12 Professional Edition", "url": "#win12-pro" },
-            { "label": "Windows 12 Next-Gen Cloud OS", "url": "#win12-cloud" },
-            { "label": "Windows Core Architecture vNext", "url": "#win-core" }
-          ]
-        },
-        {
-          "label": "โซลูชันสำหรับสถานประกอบการและไอที",
-          "sub": [
-            { "label": "Windows 12 Enterprise Suite", "url": "#win12-ent" },
-            { "label": "Windows Server 2026 Long-Term", "url": "#server" },
-            { "label": "Windows Subsystem for Linux v3", "url": "#wsl" },
-            { "label": "Windows Sandbox Safe Environment", "url": "#sandbox" }
-          ]
-        },
-        {
-          "label": "การจำลองระบบคลาวด์และเวอร์ชวลไลเซชัน",
-          "sub": [
-            { "label": "Windows 365 Cloud PC Service", "url": "#win365" },
-            { "label": "Azure Virtual Desktop Nodes", "url": "#virtual-desktop" },
-            { "label": "Hyper-V Enterprise Hypervisor", "url": "#hyperv" }
-          ]
-        }
-      ]
-    },
-    {
-      "label": "Azure Enterprise Cloud",
-      "sub": [
-        {
-          "label": "โครงสร้างพื้นฐานและการประมวลผล",
-          "sub": [
-            { "label": "Azure Virtual Compute Engines", "url": "#azure-compute" },
-            { "label": "Azure Kubernetes Cluster (AKS)", "url": "#azure-aks" },
-            { "label": "Azure Blob Storage Service v2", "url": "#azure-storage" },
-            { "label": "Virtual Networks Global Hub", "url": "#azure-network" }
-          ]
-        },
-        {
-          "label": "ฐานข้อมูลและการวิเคราะห์บิ๊กดาต้า",
-          "sub": [
-            { "label": "Azure SQL Managed Instance", "url": "#azure-sql" },
-            { "label": "Cosmos DB Global Distributed", "url": "#cosmosdb" },
-            { "label": "Azure Synapse Analytics Core", "url": "#synapse" },
-            { "label": "PostgreSQL Flexible Cluster", "url": "#azure-postgres" }
           ]
         }
       ]
