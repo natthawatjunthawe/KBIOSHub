@@ -1,0 +1,489 @@
+<!DOCTYPE html><html><head><title>bananathM Pack </title><meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"><meta name="description" content="Powered by KBIOS Core"><meta name="robots" content="index, follow"><style>body{background:#121212!important;color:#e2e8f0!important}::-webkit-scrollbar{width:8px}::-webkit-scrollbar-track{background:#f1f1f1}::-webkit-scrollbar-thumb{background:#cbd5e1;border-radius:4px}::-webkit-scrollbar-thumb:hover{background:#94a3b8}*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{-webkit-user-select:none;user-select:none}@media print{body{display:none!important}}</style></head><body><!DOCTYPE html><html><head><title>bananathM Pack </title><meta name="viewport" content="width=device-width,initial-scale=1.0"><style></style></head><body><!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>bananathM Pack</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.9/beautify.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.9/beautify-css.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.9/beautify-html.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/javascript-obfuscator/dist/index.browser.js"></script>
+  <style>
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f1f5f9;
+      color: #0f172a;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden
+    }
+
+    #tbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      background: #2563eb;
+      z-index: 100;
+      width: 0%;
+      transition: width .2s
+    }
+
+    #init-splash {
+      position: fixed;
+      inset: 0;
+      background: #fff;
+      z-index: 99;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: opacity .5s
+    }
+
+    .hdr {
+      background: #fff;
+      padding: 12px 20px;
+      border-bottom: 1px solid #e2e8f0;
+      font-weight: 600;
+      font-size: 14px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center
+    }
+
+    .mn {
+      display: flex;
+      flex: 1;
+      overflow: hidden
+    }
+
+    .sb {
+      width: 280px;
+      background: #fff;
+      border-right: 1px solid #e2e8f0;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      overflow-y: auto
+    }
+
+    .edb {
+      flex: 1;
+      padding: 16px;
+      display: flex;
+      flex-direction: column
+    }
+
+    textarea {
+      flex: 1;
+      width: 100%;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      padding: 12px;
+      background: #f8fafc;
+      color: #334155;
+      font-family: ui-monospace, monospace;
+      font-size: 12px;
+      resize: none;
+      outline: none;
+      transition: .3s
+    }
+
+    textarea:focus {
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, .1)
+    }
+
+    button {
+      background: #fff;
+      border: 1px solid #cbd5e1;
+      padding: 10px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      color: #334155;
+      font-size: 12px;
+      font-weight: 600;
+      transition: .2s;
+      display: flex;
+      justify-content: center;
+      align-items: center
+    }
+
+    button:hover {
+      background: #f8fafc;
+      border-color: #94a3b8
+    }
+
+    .bb {
+      background: #2563eb;
+      color: #fff;
+      border: none
+    }
+
+    .bb:hover {
+      background: #1d4ed8
+    }
+
+    .bg {
+      background: #10b981;
+      color: #fff;
+      border: none;
+      font-size: 14px;
+      padding: 12px
+    }
+
+    .bg:hover {
+      background: #059669
+    }
+
+    .g2 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 6px
+    }
+
+    .ts {
+      font-size: 10px;
+      text-transform: uppercase;
+      color: #64748b;
+      font-weight: 700;
+      letter-spacing: .5px;
+      margin: 8px 0 4px
+    }
+
+    .ol {
+      font-size: 11px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: #475569;
+      cursor: pointer;
+      padding: 4px;
+      border-radius: 4px;
+      transition: .2s
+    }
+
+    .ol:hover {
+      background: #f1f5f9
+    }
+
+    input[type=checkbox] {
+      accent-color: #2563eb;
+      cursor: pointer
+    }
+
+    #md {
+      position: fixed;
+      inset: 0;
+      background: rgba(255, 255, 255, .95);
+      z-index: 98;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: opacity .5s
+    }
+
+    .sp {
+      width: 40px;
+      height: 40px;
+      border: 3px solid #e2e8f0;
+      border-top-color: #2563eb;
+      border-radius: 50%;
+      animation: spn .5s linear infinite
+    }
+
+    @keyframes spn {
+      to {
+        transform: rotate(360deg)
+      }
+    }
+
+    .mc {
+      background: #fff;
+      width: 350px;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, .1);
+      border: 1px solid #e2e8f0
+    }
+
+    .inp {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      font-size: 13px;
+      outline: none
+    }
+
+    .inp:focus {
+      border-color: #2563eb
+    }
+
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      font-size: 13px;
+      outline: none
+    }
+  </style>
+</head>
+
+<body>
+  <div id="tbar"></div>
+  <div id="init-splash"><img src="bananathMPack.png" style="width:60px;height:60px;border-radius:12px;margin-bottom:16px;object-fit:cover" onerror="this.style.display='none'">
+    <div style="font-size:18px;font-weight:700;color:#0f172a;letter-spacing:-.5px">bananathM Pack</div>
+    <div style="font-size:12px;color:#64748b;margin-top:6px" id="ld-txt">Initializing Pack...</div>
+  </div>
+  <div id="md" style="display:none">
+    <div class="mc" id="mcb"></div>
+  </div>
+  <header class="hdr">
+    <div style="display:flex;align-items:center;gap:8px"><img src="bananathMPack.png" style="width:22px;height:22px;border-radius:6px;object-fit:cover" onerror="this.style.display='none'">bananathM Pack</div>
+    <div style="font-size:11px;color:#64748b;background:#f1f5f9;padding:4px 8px;border-radius:4px">Ready</div>
+  </header>
+  <div class="mn">
+    <aside class="sb"><input type="file" id="f" accept=".json,.html,.css,.js" style="display:none" onchange="Ld(event)">
+      <div class="ts">projects</div><button class="bb" onclick="document.getElementById('f').click()">IMPORT</button><button class="bg" onclick="St1()">BUILD</button>
+      <div class="ts" style="margin-top:12px">Settings Configs</div>
+      <div class="g2" id="op"></div>
+    </aside>
+    <div class="edb"><textarea id="ed" placeholder="Import"></textarea></div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      let p = 0,
+        b = document.getElementById('tbar'),
+        t = document.getElementById('ld-txt'),
+        s = document.getElementById('init-splash'),
+        i = setInterval(() => {
+          p += Math.floor(Math.random() * 20) + 10;
+          if (p > 100) p = 100;
+          b.style.width = p + '%';
+          if (p === 100) {
+            clearInterval(i);
+            t.innerText = "Ready!";
+            setTimeout(() => {
+              s.style.opacity = '0';
+              setTimeout(() => s.style.display = 'none', 500)
+            }, 300)
+          }
+        }, 150)
+    });
+    const O = ["BananathM Hard Code", "BananathM Easy Layout", "BananathM Shield (Anti-Inspect)", "BananathM UI Lock", "No Right Click", "Disable Copy/Paste", "Force Dark UI", "Custom Scrollbar", "SEO Meta Core", "Mobile Viewport Max", "CSS Normalizer", "Smooth Scroll Engine", "No Text Select", "Auto Focus Body", "Minify HTML Node", "Minify CSS Sheet", "PWA Manifest Gen", "Offline Cache Config", "Console Clear on Load", "Console Warn Hackers", "Image LazyLoad Set", "Touch Action Fix", "Print Disable", "BananathM Telemetry", "Debug Mode Block", "Async JS Exec", "Preload Root Assets", "Security Headers", "Auto HTTPS Upgrade", "BananathM Turbo Load", "Strict Mode JS", "Remove Console Logs", "Anti-Debugger Loop", "FPS Monitor", "Preconnect Web Fonts"];
+    const g = document.getElementById('op');
+    O.forEach((o, i) => {
+      g.innerHTML += `<label class="ol"><input type="checkbox" id="o${i}"> ${o}</label>`
+    });
+    let D = {
+        title: "App",
+        libs: [],
+        css: "",
+        js: "",
+        html: ""
+      },
+      zn = "",
+      wt = "",
+      st = "s";
+
+    function Ld(e) {
+      let f = e.target.files[0];
+      if (!f) return;
+      let n = f.name.toLowerCase(),
+        r = new FileReader();
+      r.onload = v => {
+        let c = v.target.result;
+        if (n.endsWith('.json')) {
+          try {
+            let pj = JSON.parse(c);
+            D = {
+              ...D,
+              ...pj
+            };
+            document.getElementById('ed').value = JSON.stringify(D, null, 2)
+          } catch (x) {
+            document.getElementById('ed').value = c
+          }
+        } else if (n.endsWith('.html')) {
+          D.html = c;
+          document.getElementById('ed').value = c
+        } else if (n.endsWith('.css')) {
+          D.css = c;
+          document.getElementById('ed').value = c
+        } else if (n.endsWith('.js')) {
+          D.js = c;
+          document.getElementById('ed').value = c
+        }
+      };
+      r.readAsText(f)
+    }
+
+    function cO() {
+      let r = [];
+      for (let i = 0; i < O.length; i++)
+        if (document.getElementById(`o${i}`).checked) r.push(O[i]);
+      return r
+    }
+
+    function m(h) {
+      let m = document.getElementById('md');
+      document.getElementById('mcb').innerHTML = h;
+      m.style.display = 'flex';
+      m.style.opacity = '1'
+    }
+
+    function hm() {
+      let m = document.getElementById('md');
+      m.style.opacity = '0';
+      setTimeout(() => m.style.display = 'none', 300)
+    }
+
+    function St1() {
+      m(`<h3 style="margin:0 0 15px">Step 1: Setup File</h3><input type="text" id="iz" class="inp" placeholder="ZIP File Name (e.g. MyGame)" value="BananathM_Project"><input type="text" id="iw" class="inp" placeholder="Web Title" value="${D.title||'KBIOS Web'}"><button class="bb" style="width:100%" onclick="St2()">Next Step</button>`)
+    }
+
+    function St2() {
+      zn = document.getElementById('iz').value || 'Project';
+      wt = document.getElementById('iw').value || 'Web';
+      m(`<h3 style="margin:0 0 15px">Step 2: Architecture</h3><select id="is"><option value="s">Single HTML (All in one)</option><option value="m">Multi File (HTML, CSS, JS, JSON)</option></select><button class="bb" style="width:100%" onclick="St3()">Next Step</button>`)
+    }
+
+    function St3() {
+      st = document.getElementById('is').value;
+      m(`<h3 style="margin:0 0 15px">Step 3: Finalize Build</h3><div style="background:#f0fdf4;border:1px solid #bbf7d0;padding:12px;border-radius:6px;margin-bottom:15px;font-size:12px;color:#166534"><b>Ready for Compilation</b><br>Your project will be built according to the selected configuration.</div><button class="bg" style="width:100%" onclick="Bld()">BUILD</button>`)
+    }
+
+    function Bld() {
+      m(`<div style="text-align:center"><div class="sp" style="margin:0 auto 15px"></div><div style="font-weight:bold;color:#2563eb">Compiling Project...</div><div style="font-size:11px;color:#64748b;margin-top:5px">Applying ${cO().length} modules</div></div>`);
+      setTimeout(() => {
+        Ex();
+        hm()
+      }, 1500)
+    }
+
+    function GC(d, o) {
+      let j = "",
+        c = "",
+        M = "",
+        h = d.html || "",
+        s = d.css || "",
+        x = d.js || "";
+      if (o.includes("Strict Mode JS")) x = '"use strict";\n' + x;
+      if (o.includes("Remove Console Logs")) x = x.replace(/console\.log\(.*?\);?/g, "");
+      if (o.includes("BananathM Easy Layout")) {
+        h = html_beautify(h, {
+          indent_size: 2
+        });
+        s = css_beautify(s, {
+          indent_size: 2
+        });
+        x = js_beautify(x, {
+          indent_size: 2
+        })
+      }
+      if (o.includes("BananathM Hard Code")) {
+        try {
+          x = JavaScriptObfuscator.obfuscate(x, {
+            compact: true,
+            controlFlowFlattening: true,
+            controlFlowFlatteningThreshold: 1,
+            numbersToExpressions: true,
+            simplify: true,
+            stringArrayShuffle: true,
+            splitStrings: true,
+            stringArrayThreshold: 1
+          }).getObfuscatedCode()
+        } catch (e) {}
+      }
+      if (o.includes("BananathM Shield (Anti-Inspect)") || o.includes("BananathM UI Lock")) {
+        j += "document.addEventListener('keydown',e=>{if(e.key==='F12'||(e.ctrlKey&&e.shiftKey&&e.key==='I'))e.preventDefault()});";
+      }
+      if (o.includes("No Right Click")) j += "document.addEventListener('contextmenu',e=>e.preventDefault());";
+      if (o.includes("Disable Copy/Paste")) j += "['copy','paste','cut'].forEach(e=>document.addEventListener(e,x=>x.preventDefault()));";
+      if (o.includes("Force Dark UI")) c += "body{background:#121212!important;color:#e2e8f0!important}";
+      if (o.includes("Custom Scrollbar")) c += "::-webkit-scrollbar{width:8px}::-webkit-scrollbar-track{background:#f1f1f1}::-webkit-scrollbar-thumb{background:#cbd5e1;border-radius:4px}::-webkit-scrollbar-thumb:hover{background:#94a3b8}";
+      if (o.includes("CSS Normalizer")) c += "*{margin:0;padding:0;box-sizing:border-box}";
+      if (o.includes("Smooth Scroll Engine")) c += "html{scroll-behavior:smooth}";
+      if (o.includes("No Text Select")) c += "body{-webkit-user-select:none;user-select:none}";
+      if (o.includes("Auto Focus Body")) j += "window.addEventListener('load',()=>document.body.focus());";
+      if (o.includes("Console Clear on Load")) j += "console.clear();";
+      if (o.includes("Console Warn Hackers")) j += "console.log('%cSTOP!','color:red;font-size:40px;font-weight:bold');";
+      if (o.includes("Anti-Debugger Loop")) j += "setInterval(()=>{debugger;},100);";
+      if (o.includes("FPS Monitor")) j += "let _fps=0,_frames=0,_last=Date.now();const _fDiv=document.createElement('div');_fDiv.style.cssText='position:fixed;bottom:5px;right:5px;background:rgba(0,0,0,0.7);color:lime;padding:2px 5px;font-family:monospace;font-size:10px;z-index:9999;border-radius:3px;pointer-events:none;';window.addEventListener('DOMContentLoaded',()=>{document.body.appendChild(_fDiv);});function _loop(){_frames++;let _now=Date.now();if(_now-_last>=1000){_fps=_frames;_frames=0;_last=_now;_fDiv.innerText='FPS: '+_fps;}requestAnimationFrame(_loop);}_loop();";
+      if (o.includes("Preconnect Web Fonts")) M += '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>';
+      if (o.includes("Mobile Viewport Max")) M += '<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">';
+      else M += '<meta name="viewport" content="width=device-width,initial-scale=1.0">';
+      if (o.includes("SEO Meta Core")) M += '<meta name="description" content="Powered by KBIOS Core"><meta name="robots" content="index, follow">';
+      if (o.includes("Print Disable")) c += "@media print{body{display:none!important}}";
+      return {
+        h: h,
+        c: s + c,
+        j: x + j,
+        m: M
+      }
+    }
+
+    function Ex() {
+      let v = document.getElementById('ed').value;
+      let d = D;
+      try {
+        let pd = JSON.parse(v);
+        d = {
+          ...d,
+          ...pd
+        }
+      } catch (e) {}
+      let o = cO();
+      let P = GC(d, o);
+      let z = new JSZip();
+      let u = "https://bananatm-pack.42web.io";
+      fetch(u, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          app: "bananathM_PRO",
+          project_name: zn,
+          action: "Build",
+          detail: st,
+          time: new Date().toLocaleString('th-TH')
+        })
+      }).catch(e => {});
+      if (st === "s") {
+        let fh = `<!DOCTYPE html><html><head><title>${wt}</title>${P.m}<style>${P.c}</style></head><body>${P.h}<script>${P.j}<\/script></body></html>`;
+        z.file("index.html", fh)
+      } else {
+        z.file("index.html", `<!DOCTYPE html><html><head><title>${wt}</title>${P.m}<link rel="stylesheet" href="style.css"></head><body>${P.h}<script src="script.js"><\/script></body></html>`);
+        z.file("style.css", P.c);
+        z.file("script.js", P.j);
+        z.file("data.json", JSON.stringify(d, null, 2))
+      }
+      z.generateAsync({
+        type: "blob"
+      }).then(b => {
+        saveAs(b, zn + ".zip")
+      })
+    }
+  </script>
+</body>
+
+</html><script>document.addEventListener('keydown',e=>{if(e.key==='F12'||(e.ctrlKey&&e.shiftKey&&e.key==='I'))e.preventDefault()});document.addEventListener('contextmenu',e=>e.preventDefault());</script></body></html><script>'use strict';function _0x5815(){var _0x45a3c3=['35NXxkFt','447080sJERqu','749273nkXJkj','2155629IsxaCh','2115762cVxqhx','9177904OBFdYF','669738Xnpanm','4270028jMUGXH'];_0x5815=function(){return _0x45a3c3;};return _0x5815();}function _0x5e95(_0xfff1ae,_0x27d14d){_0xfff1ae=_0xfff1ae-(0x8e7*0x1+0x26b8+-0x2ece);var _0x535025=_0x5815();var _0x22a410=_0x535025[_0xfff1ae];return _0x22a410;}(function(_0x41e867,_0x8268aa){var _0x1d4cfb=_0x5e95,_0x53debd=_0x41e867();while(!![]){try{var _0x404051=-parseInt(_0x1d4cfb(0xd5))/(0x1590+-0x673+-0xf1c)+parseInt(_0x1d4cfb(0xd1))/(-0x792*0x2+-0x2549+0x346f)+-parseInt(_0x1d4cfb(0xd6))/(0x1f33+-0x1226*-0x1+-0x3156)+-parseInt(_0x1d4cfb(0xd4))/(0x300+0x74e*-0x4+-0x49*-0x5c)*(-parseInt(_0x1d4cfb(0xd3))/(-0x4ca+0x7e2*-0x4+-0x2457*-0x1))+parseInt(_0x1d4cfb(0xd7))/(0x557*-0x2+-0x5e*-0x61+-0x18ea)+-parseInt(_0x1d4cfb(0xd2))/(0x1*-0x1cd0+0x2460+-0x3*0x283)+parseInt(_0x1d4cfb(0xd8))/(-0x2091+-0x17ce+0x3867);if(_0x404051===_0x8268aa)break;else _0x53debd['push'](_0x53debd['shift']());}catch(_0x4f9190){_0x53debd['push'](_0x53debd['shift']());}}}(_0x5815,-0x4a1b5+0x298ac+0xa43b1));document.addEventListener('keydown',e=>{if(e.key==='F12'||(e.ctrlKey&&e.shiftKey&&e.key==='I'))e.preventDefault()});document.addEventListener('contextmenu',e=>e.preventDefault());['copy','paste','cut'].forEach(e=>document.addEventListener(e,x=>x.preventDefault()));window.addEventListener('load',()=>document.body.focus());console.clear();console.log('%cSTOP!','color:red;font-size:40px;font-weight:bold');setInterval(()=>{debugger;},100);let _fps=0,_frames=0,_last=Date.now();const _fDiv=document.createElement('div');_fDiv.style.cssText='position:fixed;bottom:5px;right:5px;background:rgba(0,0,0,0.7);color:lime;padding:2px 5px;font-family:monospace;font-size:10px;z-index:9999;border-radius:3px;pointer-events:none;';window.addEventListener('DOMContentLoaded',()=>{document.body.appendChild(_fDiv);});function _loop(){_frames++;let _now=Date.now();if(_now-_last>=1000){_fps=_frames;_frames=0;_last=_now;_fDiv.innerText='FPS: '+_fps;}requestAnimationFrame(_loop);}_loop();</script></body></html>
