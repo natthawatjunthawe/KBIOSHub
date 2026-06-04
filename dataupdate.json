@@ -3,15 +3,13 @@
     "siteName": "KBIOS",
     "year": 2026,
     "logo": "KBIOSNix.png",
-    "heroBg": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop",
+    "heroBg": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=2000",
     "theme": {
       "bg": "#ffffff",
       "surface": "rgba(255,255,255,0.98)",
       "primary": "#242424",
       "accent": "#0067b8"
-    },
-    "heroTitle": [],
-    "heroSub": []
+    }
   },
   "mainNav": [
     {
@@ -19,15 +17,11 @@
       "sub": [
         {
           "label": "bananathM Pack",
-          "sub": [
-            { "label": "bananathM Pack", "url": "https://natthawatjunthawe.github.io/KBIOSHub/bananathMPakWeb/" }
-          ]
+          "sub": [{ "label": "bananathM Pack", "url": "https://natthawatjunthawe.github.io/KBIOSHub/bananathMPakWeb/" }]
         },
         {
           "label": "KBIOS Workspace",
-          "sub": [
-            { "label": "KBIOS Workspace", "url": "https://natthawatjunthawe.github.io/KBIOSHub/KBIOSWorkspaceWeb/" }
-          ]
+          "sub": [{ "label": "KBIOS Workspace", "url": "https://natthawatjunthawe.github.io/KBIOSHub/KBIOSWorkspaceWeb/" }]
         },
         {
           "label": "Download",
@@ -39,185 +33,52 @@
           ]
         }
       ]
-    },
-          ]
-        }
-      ]
     }
   ],
   "allNav": [
     {
-      "label": "ซอฟต์แวร์ อาสาสมัคร และระบบเดสก์ท็อป",
+      "label": "ซอฟต์แวร์และระบบเดสก์ท็อป",
       "sub": [
-        { "label": "Windows 12 Ecosystem Portal", "url": "#win12" },
-        { "label": "Microsoft 365 Architecture", "url": "#m365" },
-        { "label": "KBIOS Quantum OS Engine v4", "url": "#kbios-os" },
-        { "label": "Windows IoT Enterprise Core", "url": "#win-iot" },
-        { "label": "Microsoft Edge Pro Web Browser", "url": "#edge" },
-        { "label": "Skype Desktop Communication", "url": "#skype" }
+        { "label": "Windows 12 Ecosystem", "url": "#win12" },
+        { "label": "KBIOS Quantum OS v4", "url": "#kbios-os" }
       ]
     },
     {
-      "label": "นักพัฒนา แพลตฟอร์มวิศวกรรม และเครื่องมือคอร์",
+      "label": "นักพัฒนาและเครื่องมือคอร์",
       "sub": [
-        { "label": "Visual Studio Enterprise 2026", "url": "#vs-ent" },
-        { "label": "Visual Studio Code Professional", "url": "#vscode" },
-        { "label": "GitHub Enterprise Cloud System", "url": "#github" },
-        { "label": "Microsoft .NET 10 Unified Runtime", "url": "#dotnet" },
-        { "label": "Windows Terminal Multiplex Engine", "url": "#terminal" },
-        { "label": "Azure DevOps Lifecycle Server", "url": "#devops" },
-        { "label": "TypeScript Advanced Compiler Studio", "url": "#typescript" }
-      ]
-    },
-    {
-      "label": "ฮาร์ดแวร์ อุปกรณ์พกพา และโซลูชันนวัตกรรม",
-      "sub": [
-        { "label": "Surface Pro Ultra Convertible Laptop", "url": "#surface-pro" },
-        { "label": "Surface Laptop Studio 3 Ultimate", "url": "#surface-laptop" },
-        { "label": "Surface Duo Quantum Foldable Phone", "url": "#surface-duo" },
-        { "label": "Surface Hub 3 Interactive Screen", "url": "#surface-hub" },
-        { "label": "Surface Wireless Headphones Pro", "url": "#surface-audio" },
-        { "label": "KBIOS Quantum Processing Unit Chip", "url": "#quantum-chip" }
-      ]
-    },
-    {
-      "label": "ความบันเทิง การเล่นเกมเนกซ์เจน และไลฟ์สไตล์",
-      "sub": [
-        { "label": "Xbox Series X Obsidian Black", "url": "#xbox-x" },
-        { "label": "Xbox Series S Compact White", "url": "#xbox-s" },
-        { "label": "Xbox Game Pass Ultimate Membership", "url": "#gamepass" },
-        { "label": "Xbox Cloud Gaming Platform Hub", "url": "#cloud-gaming" },
-        { "label": "Microsoft Flight Simulator 2026", "url": "#flight-sim" },
-        { "label": "Minecraft Quantum Sandbox Edition", "url": "#minecraft" },
-        { "label": "Forza Horizon Immersive Next-Gen", "url": "#forza" }
-      ]
-    },
-    {
-      "label": "ธุรกิจ การพาณิชย์ และการบริหารข้อมูลองค์กร",
-      "sub": [
-        { "label": "Dynamics 365 Cloud ERP & CRM", "url": "#dynamics" },
-        { "label": "Power BI Corporate Analytics Suite", "url": "#powerbi" },
-        { "label": "Power Apps Rapid Development Engine", "url": "#powerapps" },
-        { "label": "Power Automate Enterprise Workflows", "url": "#automate" },
-        { "label": "Microsoft Industry Dedicated Clouds", "url": "#industry-cloud" },
-        { "label": "Nuance Healthcare Generative AI", "url": "#nuance" }
-      ]
-    },
-    {
-      "label": "การศึกษา อาสาสมัคร และการพัฒนาที่ยั่งยืน",
-      "sub": [
-        { "label": "Microsoft Education Interactive Portal", "url": "#education" },
-        { "label": "Windows 11 SE Simplified Edition", "url": "#win-se" },
-        { "label": "Microsoft Philanthropies Global Hub", "url": "#philanthropies" },
-        { "label": "Carbon Neutral Cloud Tracker Engine", "url": "#sustainability" },
-        { "label": "Planetary Computer Open Data Analytics", "url": "#planetary" },
-        { "label": "KBIOS Academic Global Licensing", "url": "#academic" }
+        { "label": "Visual Studio 2026", "url": "#vs-ent" },
+        { "label": "Microsoft .NET 10", "url": "#dotnet" }
       ]
     }
   ],
   "sections": [
     {
       "id": "featured-products",
-      "title": "นวัตกรรมและผลิตภัณฑ์เรือธงระดับไฮเอนด์",
+      "title": "นวัตกรรมเรือธงระดับไฮเอนด์",
       "items": [
         {
-          "title": "Visual Studio Code Workspace Pro",
-          "desc": "แก้ไขซอร์สโค้ดระดับอุตสาหกรรมและสร้างสรรค์แอปพลิเคชันอย่างลื่นไหลด้วยระบบสมองกล AI Copilot อัจฉริยะที่ฝังมาในแกนหลักระบบ (รองรับการเล่นวิดีโอแอนิเมชันทันทีเมื่อนำเมาส์ไปชี้โฮเวอร์)",
-          "badge": [],
-          "link": "#vscode-explore",
-          "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800",
-          "video": "https://cdn.pixabay.com/video/2020/07/22/45353-442969966_tiny.mp4"
+          "title": "VS Code Workspace Pro",
+          "desc": "แก้ไขซอร์สโค้ดระดับอุตสาหกรรมด้วย AI Copilot ที่ฝังลึกในระดับ Kernel",
+          "link": "#vscode",
+          "image": "https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=800",
+          "video": "https://cdn.pixabay.com/video/2022/04/18/114979-702330886_tiny.mp4"
         },
         {
-          "title": "Surface Pro Next-Gen Neural Architecture",
-          "desc": "การปฏิวัติวงการวิศวกรรมคอมพิวเตอร์แบบพกพาผสมผสานแท็บเล็ตด้วยชิปเซ็ตประมวลผล Neural Processor Unit ระดับเนกซ์เจน (แสดงผลรูปภาพความละเอียดสูงสไตล์มินิมอลลิสต์ระดับพรีเมียม)",
-          "badge": "Hardware & Gadgets",
-          "link": "#surface-explore",
-          "image": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=800"
-        },
-        {
-          "title": "Xbox Cloud Gaming Infrastructure",
-          "desc": "สัมผัสประสบการณ์ความบันเทิงระดับคอนโซลผ่านระบบคลาวด์เน็ตเวิร์กความเร็วสูงแบบสตรีมมิ่งตรงถึงเบราว์เซอร์ของคุณโดยไม่ต้องดาวน์โหลดและติดตั้งตัวเกมให้เสียเวลา (การ์ดรูปแบบวิดีโอเล่นวนอัตโนมัติ)",
-          "badge": "Gaming & Streams",
-          "link": "#xbox-explore",
-          "video": "https://cdn.pixabay.com/video/2019/01/21/20853-313588266_tiny.mp4"
-        },
-        {
-          "title": "Windows 12 Intelligent Fluent Taskbar",
-          "desc": "ส่วนติดต่อผู้ใช้งานรูปแบบใหม่ที่ปรับเปลี่ยนตามบริบทการทำงานของคุณโดยอัตโนมัติ พร้อมวิดเจ็ตขับเคลื่อนด้วยปัญญาประดิษฐ์เรียลไทม์ (ทำงานผสานกันทั้งภาพนิ่งสแตติกและเอฟเฟกต์วิดีโอ)",
-          "badge": "Operating System",
-          "link": "#win12-explore",
-          "image": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?q=80&w=800",
-          "video": "https://cdn.pixabay.com/video/2021/04/12/70860-537482319_tiny.mp4"
-        }
-      ]
-    },
-    {
-      "id": "enterprise-solutions",
-      "title": "โครงสร้างพื้นฐานและเทคโนโลยีสำหรับภาคธุรกิจ",
-      "items": [
-        {
-          "title": "Azure Quantum Computing Cluster",
-          "desc": "ทะลายขีดจำกัดด้านคณิตศาสตร์และการประมวลผลข้อมูลจำลองที่ซับซ้อนด้วยระบบซูเปอร์คอมพิวเตอร์ควอนตัมชั้นนำสำหรับห้องปฏิบัติการวิจัยระดับชาติ (การประมวลผลรูปแบบภาพเคลื่อนไหวโมเดิร์นล้วน)",
-          "badge": "Azure Supercomputing",
-          "link": "#azure-quantum",
-          "video": "https://cdn.pixabay.com/video/2020/05/25/40068-424888204_tiny.mp4"
-        },
-        {
-          "title": "Microsoft Intelligent Cyber Defense System",
-          "desc": "เฝ้าระวังภัยคุกคาม มัลแวร์เรียกค่าไถ่ และช่องโหว่ซีโร่เดย์บนโครงสร้างไอทีชั้นความลับสูงของคุณด้วยกำแพงไฟร์วอลล์วิเคราะห์พฤติกรรมเชิงลึก (รูปถ่ายระดับอุตสาหกรรมไอทีสไตล์เน้นความปลอดภัย)",
-          "badge": "Global Cybersecurity",
-          "link": "#cybersecurity-explore",
-          "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=800"
-        },
-        {
-          "title": "Copilot Studio Bot Creator Engine",
-          "desc": "แพลตฟอร์มแบบ Low-code ที่เปิดโอกาสให้พนักงานในองค์กรของคุณสามารถสร้างและเชื่อมต่อโมเดลภาษาขนาดใหญ่เข้ากับดาต้าเบสของบริษัทได้อย่างง่ายดายและปลอดภัยสูงสุด (ผสมผสานวิดีโอสาธิตและภาพพื้นหลัง)",
-          "badge": "Generative AI",
-          "link": "#copilot-studio-explore",
-          "image": "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=800",
-          "video": "https://cdn.pixabay.com/video/2020/11/03/54394-467793739_tiny.mp4"
-        }
-      ]
-    },
-    {
-      "id": "hardware-creators",
-      "title": "อุปกรณ์คอมพิวเตอร์เพื่อการทำงานและการสร้างสรรค์",
-      "items": [
-        {
-          "title": "Surface Laptop Studio 3 Active Cooling",
-          "desc": "โน้ตบุ๊กทรงประสิทธิภาพสูงสุดที่มาพร้อมกับหน้าจอกลไกบานพับ Dynamic Woven Hinge ปรับเปลี่ยนโหมดการทำงานได้ 3 รูปแบบอย่างไร้รอยต่อพร้อมระบบระบายความร้อนอัจฉริยะ (รูปภาพผสมวิดีโอโฮเวอร์)",
-          "badge": "Premium Devices",
-          "link": "#laptop-studio-explore",
-          "image": "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?q=80&w=800",
-          "video": "https://cdn.pixabay.com/video/2022/11/17/139366-771746269_tiny.mp4"
-        },
-        {
-          "title": "Xbox Elite Wireless Controller Series 3",
-          "desc": "จอยสติ๊กควบคุมระดับมืออาชีพที่สามารถปรับแต่งแรงต้านของปุ่มอนาล็อก สลับชิ้นส่วนปุ่มพายด้านหลัง และบันทึกโปรไฟล์ส่วนตัวเพื่อการตอบสนองความเร็วระดับมิลลิวินาที (รูปภาพผลิตภัณฑ์แบบสตูดิโอหน้าชัดหลังเบลอ)",
-          "badge": "Gaming Hardware",
-          "link": "#xbox-elite-explore",
-          "image": "https://images.unsplash.com/photo-1600080972464-8e5f3580213b?q=80&w=800"
+          "title": "Surface Pro Quantum",
+          "desc": "การปฏิวัติการประมวลผลผ่านชิปเซ็ต Neural Processor Unit (NPU) ยุคใหม่",
+          "link": "#surface",
+          "image": "https://images.unsplash.com/photo-1593642634367-d91a135587b5?q=80&w=800"
         }
       ]
     }
   ],
   "footer": {
     "links": [
-      { "label": "มีอะไรใหม่ในระบบนิเวศน์ KBIOS", "url": "#whats-new" },
-      { "label": "เกี่ยวกับสถาปัตยกรรมคอมพิวเตอร์ KBIOS", "url": "#about-kbios" },
-      { "label": "นโยบายความเป็นส่วนตัวของข้อมูล", "url": "#privacy" },
-      { "label": "ข้อตกลงและเงื่อนไขการใช้งานซอฟต์แวร์", "url": "#terms" },
-      { "label": "สิทธิบัตรและเครื่องหมายการค้าสากล", "url": "#trademarks" },
-      { "label": "ติดต่อฝ่ายสนับสนุนด้านเทคนิคไมโครซอฟท์", "url": "#support" },
-      { "label": "ความยั่งยืนและการปล่อยคาร์บอนเป็นศูนย์", "url": "#sustainability-report" },
-      { "label": "สมัครงานร่วมเป็นทีมพัฒนาวิศวกรรม", "url": "#careers" },
-      { "label": "แผนผังเว็บไซต์และดัชนีเนื้อหาทั้งหมด", "url": "#sitemap" }
+      { "label": "นโยบายความเป็นส่วนตัว", "url": "#privacy" },
+      { "label": "ข้อตกลงการใช้งาน", "url": "#terms" }
     ],
     "socials": [
-      { "icon": "fa-brands fa-github", "url": "https://github.com", "tip": "KBIOS Open Source GitHub Repository" },
-      { "icon": "fa-brands fa-linkedin", "url": "https://linkedin.com", "tip": "เครือข่ายธุรกิจและพันธมิตร LinkedIn" },
-      { "icon": "fa-brands fa-youtube", "url": "https://youtube.com", "tip": "รับชมวิดีโอสาธิตฟังก์ชันบน YouTube" }
+      { "icon": "fa-brands fa-github", "url": "https://github.com", "tip": "GitHub Repository" }
     ]
   }
 }
