@@ -2,7 +2,7 @@
   "config": {
     "siteName": "KBIOS",
     "year": 2026,
-    "logo": "KBIOSNix.png",
+    "logo": "KBIOS.png",
     "heroBg": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=2000",
     "theme": {
       "bg": "#ffffff",
