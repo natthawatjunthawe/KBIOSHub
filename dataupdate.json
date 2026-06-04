@@ -24,11 +24,15 @@
           "sub": [{ "label": "KBIOS Workspace", "url": "https://natthawatjunthawe.github.io/KBIOSHub/KBIOSWorkspaceWeb/" }]
         },
         {
+          "label": "Nat AI Emulator",
+          "sub": [{ "label": "Nat AI Emulator", "url": "https://natthawatjunthawe.github.io/KBIOSHub/NatEmulatorWeb/" }]
+        },
+        {
           "label": "Download",
           "sub": [
             { "label": "bananathM Pack", "url": "KBIOS" },
             { "label": "KBIOS Workspace", "url": "KBIOS" },
-            { "label": "KBIOS ENGINE", "url": "ENGINE" },
+            { "label": "Nat AI Emulator", "url": "NATEMURATOR" },
             { "label": "KBIOS OS", "url": "OS" }
           ]
         }
