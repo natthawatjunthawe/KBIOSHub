@@ -17,9 +17,5 @@
     { "name": "bananathM Beta", "version": "v4.3.0-beta", "url": "https://github.com/release2" },
     { "name": "bananathM Legacy", "version": "v3.9.5", "url": "https://github.com/release3" },
     { "name": "bananathM Classic", "version": "v2.0.0", "url": "https://github.com/release4" }
-  ],
-  "footer": {
-    "github": [],
-    "kbiosSpace": []
-  }
+  ]
 }
