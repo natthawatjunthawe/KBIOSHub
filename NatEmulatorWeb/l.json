@@ -1,0 +1,253 @@
+﻿{
+  "globalBg": "https://pbs.twimg.com/media/Dd2EsNZVMAAIsSK.jpg",
+
+  "bot": {
+    "name": "Nat AI",
+    "version": "0.4",
+    "style": "friendly, casual, slightly nerdy",
+    "language": "th-th",
+    "memory_enabled": true
+  },
+
+  "resources": [
+    {
+      "name": "index.html",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/index.html",
+      "type": "code"
+    },
+    {
+      "name": "index",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/index.html",
+      "type": "code"
+    },
+    {
+      "name": "html",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/index.html",
+      "type": "code"
+    },
+    {
+      "name": "หน้าหลัก",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/index.html",
+      "type": "code"
+    },
+    {
+      "name": ".html",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/index.html",
+      "type": "code"
+    },
+    {
+      "name": "หน้าหลัก.html",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/index.html",
+      "type": "code"
+    },
+    {
+      "name": "ไฟล์ index.html",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/index.html",
+      "type": "code"
+    },
+    {
+      "name": "ไฟล์index.html",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/index.html",
+      "type": "code"
+    },
+    {
+      "name": "ไฟล์ index.html",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/index.html",
+      "type": "code"
+    },
+    {
+      "name": "ขอไฟล์index.html",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/index.html",
+      "type": "code"
+    },
+    {
+      "name": "ขอไฟล์ index.html",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/index.html",
+      "type": "code"
+    },
+    {
+      "name": "ขอโค้ดindex.html",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/index.html",
+      "type": "code"
+    },
+    {
+      "name": "ขอโค้ด index.html",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/index.html",
+      "type": "code"
+    },
+    {
+      "name": "ขอไฟล์หน้าหลัก.html",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/index.html",
+      "type": "code"
+    },
+    {
+      "name": "ขอไฟล์หน้าหลักหน่อย",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/index.html",
+      "type": "code"
+    },
+    {
+      "name": "ขอไฟล์.html",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/index.html",
+      "type": "code"
+    },
+    {
+      "name": "style.css",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/style.css",
+      "type": "code"
+    },
+       {
+      "name": "ขอไฟล์style.css",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/style.css",
+      "type": "code"
+    },
+       {
+      "name": "ขอไฟล์style.cssหน่อย",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/style.css",
+      "type": "code"
+    },
+       {
+      "name": "ขอไฟล์ style.css",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/style.css",
+      "type": "code"
+    },
+       {
+      "name": "ขอไฟล์ style.css หน่อย",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/style.css",
+      "type": "code"
+    },
+       {
+      "name": "ขอไฟล์style",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/style.css",
+      "type": "code"
+    },
+       {
+      "name": "ขอไฟล์ตกแต่ง.css",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/style.css",
+      "type": "code"
+    },
+       {
+      "name": "ขอไฟล์ตกแต่ง style.css",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/style.css",
+      "type": "code"
+    },
+          {
+      "name": "ขอไฟล์ตกแต่ง style.css หน่อย",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/style.css",
+      "type": "code"
+    },
+          {
+      "name": "ขอไฟล์ตกแต่ง style.css หน่อย",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/style.css",
+      "type": "code"
+    },
+    {
+      "name": "script.js",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/script.js",
+      "type": "code"
+    },
+    {
+      "name": "ขอ.jsหน่อย",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/script.js",
+      "type": "code"
+    },
+    {
+      "name": "ขอ .js หน่อย",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/script.js",
+      "type": "code"
+    },
+    {
+      "name": "ขอ js หน่อย",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/script.js",
+      "type": "code"
+    },
+    {
+      "name": "ขอไฟล์ script.js",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/script.js",
+      "type": "code"
+    },
+    {
+      "name": "ขอไฟล์ script.js หน่อย",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/script.js",
+      "type": "code"
+    },
+    {
+      "name": "ขอไฟล์.js",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/script.js",
+      "type": "code"
+    },
+    {
+      "name": "ขอไฟล์.jsหน่อย",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/script.js",
+      "type": "code"
+    },
+    {
+      "name": "ขอไฟล์ .js หน่อย",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/script.js",
+      "type": "code"
+    },
+    {
+      "name": "db.json",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/db.json",
+      "type": "code"
+    },
+    {
+      "name": "model",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/db.json",
+      "type": "code"
+    },
+    {
+      "name": "ขอไฟล์model",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/db.json",
+      "type": "code"
+    },
+    {
+      "name": "ขอไฟล์ model",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/db.json",
+      "type": "code"
+    },
+    {
+      "name": "ขอไฟล์ model หน่อย",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/db.json",
+      "type": "code"
+    },
+    {
+      "name": "โมเดล",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/db.json",
+      "type": "code"
+    },
+    {
+      "name": "db",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/db.json",
+      "type": "code"
+    },
+    {
+      "name": "dbโมเดล",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/db.json",
+      "type": "code"
+    },
+    {
+      "name": "โมเดลdb",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/db.json",
+      "type": "code"
+    },
+    {
+      "name": "โมเดล.json",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/db.json",
+      "type": "code"
+    },
+    {
+      "name": "model.json",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/db.json",
+      "type": "code"
+    },
+    {
+      "name": "โมเดลหลัก",
+      "url": "https://github.com/natthawatjunthawe/kbios.nat.ai.free.com/blob/main/db.json",
+      "type": "code"
+    },
+    {
+      "name": "รูปพื้นหลัง",
+      "url": "https://pbs.twimg.com/media/Dd2EsNZVMAAIsSK.jpg",
+      "type": "image"
+    }
+  ]
