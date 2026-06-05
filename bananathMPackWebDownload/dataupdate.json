@@ -9,7 +9,7 @@
     "desc": "เอนจินโอเพนซอร์สขั้นสุดยอด น้ำหนักเบา ทรงพลัง และพร้อมสำหรับระดับโปรดักชัน",
     "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800",
     "buttons": [
-      { "label": "Web", "url": "KBIOS/bananathMPackWebDownload/bananathMPack_Web_Beta.zip", "icon": "fa-brands fa-html5" }
+      { "label": "Web", "url": "/bananathMPackWebDownload/bananathMPack_Web_Beta.zip", "icon": "fa-brands fa-html5" }
     ]
   },
   "versions": [
@@ -17,5 +17,9 @@
     { "name": "bananathM Beta", "version": "v4.3.0-beta", "url": "https://github.com/release2" },
     { "name": "bananathM Legacy", "version": "v3.9.5", "url": "https://github.com/release3" },
     { "name": "bananathM Classic", "version": "v2.0.0", "url": "https://github.com/release4" }
-  ]
+  ],
+  "footer": {
+    "github": "https://github.com",
+    "kbiosSpace": ""
+  }
 }
