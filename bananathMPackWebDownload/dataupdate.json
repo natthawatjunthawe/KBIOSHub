@@ -12,12 +12,7 @@
       { "label": "Web", "url": "https://cdn.jsdelivr.net/gh/natthawatjunthawe/KBIOS@main/bananathMPackWebDownload/bananathMPack_Web_1.2Beta.zip", "icon": "fa-brands fa-html5" }
     ]
   },
-  "versions": [
-    { "name": "bananathM Stable", "version": "v4.2.1", "url": "https://github.com/release1" },
-    { "name": "bananathM Beta", "version": "v4.3.0-beta", "url": "https://github.com/release2" },
-    { "name": "bananathM Legacy", "version": "v3.9.5", "url": "https://github.com/release3" },
-    { "name": "bananathM Classic", "version": "v2.0.0", "url": "https://github.com/release4" }
-  ],
+  "versions": [],
   "footer": {
     "github": "https://github.com",
     "kbiosSpace": ""
