@@ -9,7 +9,7 @@
     "desc": "เอนจินโอเพนซอร์สขั้นสุดยอด น้ำหนักเบา ทรงพลัง และพร้อมสำหรับระดับโปรดักชัน",
     "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800",
     "buttons": [
-      { "label": "Web", "url": "", "icon": "fa-brands fa-html5" }
+      { "label": "Web", "url": "https://github.com/natthawatjunthawe/KBIOS/blob/main/bananathMPackWebDownload%2FbananathMPack_Web_1.2Beta.zip", "icon": "fa-brands fa-html5" }
     ]
   },
   "footer": {
