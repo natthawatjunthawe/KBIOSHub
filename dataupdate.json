@@ -61,8 +61,8 @@
       "title": "More",
       "items": [
         {
-          "title": "KBIOS Workspace in Web",
-          "desc": "แก้ไขซอร์สโค้ดระดับอุตสาหกรรมด้วย AI Copilot ที่ฝังลึกในระดับ Kernel",
+          "title": "KBIOS Workspace Web 1.2 BETA",
+          "desc": "Edit text files, preview standard formats, and run your index.html in full-screen simulation. Try it — simple and elegant. Use it as your file manager.",
           "link": "https://natthawatjunthawe.github.io/KBIOS/KBIOSWorkspaceWeb/",
           "image": "KBIOSWorkspaceWeb/MANUBGKBIOSWorkspace.png"
         },
