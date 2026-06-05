@@ -58,7 +58,7 @@
   "sections": [
     {
       "id": "featured-products",
-      "title": "More",
+      "title": "Sample",
       "items": [
         {
           "title": "KBIOS Workspace Web 1.2 BETA",
@@ -67,10 +67,10 @@
           "image": "KBIOSWorkspaceWeb/MANUBGKBIOSWorkspace.png"
         },
         {
-          "title": "Surface Pro Quantum",
+          "title": "bananathM Pack 2.3 SET",
           "desc": "การปฏิวัติการประมวลผลผ่านชิปเซ็ต Neural Processor Unit (NPU) ยุคใหม่",
           "link": "#surface",
-          "image": "https://images.unsplash.com/photo-1593642634367-d91a135587b5?q=80&w=800"
+          "image": "bananathMPackWeb/MANUBGbananathMPack.png"
         }
       ]
     }
