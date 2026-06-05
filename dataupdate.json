@@ -58,14 +58,13 @@
   "sections": [
     {
       "id": "featured-products",
-      "title": "KBIOS",
+      "title": "ล่าสุด",
       "items": [
         {
           "title": "KBIOS Workspace in Web",
           "desc": "แก้ไขซอร์สโค้ดระดับอุตสาหกรรมด้วย AI Copilot ที่ฝังลึกในระดับ Kernel",
           "link": "#vscode",
-          "image": "KBIOSWorkspace/MANUBGKBIOSWorkspace.png",
-          "video": "https://cdn.pixabay.com/video/2022/04/18/114979-702330886_tiny.mp4"
+          "image": "KBIOSWorkspaceWeb/MANUBGKBIOSWorkspace.png"
         },
         {
           "title": "Surface Pro Quantum",
