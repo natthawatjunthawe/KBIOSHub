@@ -31,9 +31,7 @@
           "label": "Download",
           "sub": [
             { "label": "bananathM Pack", "url": "https://natthawatjunthawe.github.io/KBIOS/bananathMPackWebDownload/" },
-            { "label": "KBIOS Workspace", "url": "KBIOS" },
-            { "label": "Nat AI Emulator", "url": "NATEMURATOR" },
-            { "label": "KBIOS OS", "url": "OS" }
+            { "label": "KBIOS Workspace", "url": "https://natthawatjunthawe.github.io/KBIOS/KBIOSWorkspaceWebDownload/" }
           ]
         }
       ]
@@ -41,20 +39,7 @@
   ],
   "allNav": [
     {
-      "label": "Soo",
-      "sub": [
-        { "label": "Windows 12 Ecosystem", "url": "#win12" },
-        { "label": "KBIOS Quantum OS v4", "url": "#kbios-os" }
-      ]
-    },
-    {
-      "label": "นักพัฒนาและเครื่องมือคอร์",
-      "sub": [
-        { "label": "Visual Studio 2026", "url": "#vs-ent" },
-        { "label": "Microsoft .NET 10", "url": "#dotnet" }
-      ]
-    }
-  ],
+      "label": [],
   "sections": [
     {
       "id": "featured-products",
@@ -81,7 +66,7 @@
       { "label": "ข้อตกลงการใช้งาน", "url": "#terms" }
     ],
     "socials": [
-      { "icon": "fa-brands fa-github", "url": "https://github.com/natthawatjunthawe/KBIOS", "tip": "GitHub Repository" }
+      { "icon": "fa-brands fa-github", "url": "https://github.com/natthawatjunthawe/KBIOS", "tip": "GitHub" }
     ]
   }
 }
