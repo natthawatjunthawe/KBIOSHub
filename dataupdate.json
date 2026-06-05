@@ -82,7 +82,7 @@
       { "label": "ข้อตกลงการใช้งาน", "url": "#terms" }
     ],
     "socials": [
-      { "icon": "fa-brands fa-github", "url": "https://github.com", "tip": "GitHub Repository" }
+      { "icon": "fa-brands fa-github", "url": "https://github.com/natthawatjunthawe/KBIOS", "tip": "GitHub Repository" }
     ]
   }
 }
