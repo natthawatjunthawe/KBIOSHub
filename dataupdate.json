@@ -17,15 +17,21 @@
       "sub": [
         {
           "label": "bananathM Pack",
-          "sub": [{ "label": "bananathM Pack", "url": "https://natthawatjunthawe.github.io/KBIOS/bananathMPackWeb/" }]
+          "sub": [
+            { "label": "Open Web App", "url": "https://natthawatjunthawe.github.io/KBIOS/bananathMPackWeb/" }
+          ]
         },
         {
           "label": "KBIOS Workspace",
-          "sub": [{ "label": "KBIOS Workspace", "url": "https://natthawatjunthawe.github.io/KBIOS/KBIOSWorkspaceWeb/" }]
+          "sub": [
+            { "label": "Open Workspace", "url": "https://natthawatjunthawe.github.io/KBIOS/KBIOSWorkspaceWeb/" }
+          ]
         },
         {
           "label": "Nat AI Emulator",
-          "sub": [{ "label": "Nat AI Emulator", "url": "https://natthawatjunthawe.github.io/KBIOS/NatEmulatorWeb/" }]
+          "sub": [
+            { "label": "Open Emulator", "url": "https://natthawatjunthawe.github.io/KBIOS/NatEmulatorWeb/" }
+          ]
         },
         {
           "label": "Download",
