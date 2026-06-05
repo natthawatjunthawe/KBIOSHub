@@ -6,7 +6,7 @@
   },
   "downloadApp": {
     "title": "KBIOS Workspace 2.3 SET",
-    "desc": "t text files, preview standard formats, and run your index.html in full-screen simulation. Try it — simple and elegant. Use it as your file manager.,
+    "desc": "Edit text files, preview standard formats, and run your index.html in full-screen simulation. Try it — simple and elegant. Use it as your file manager.",
     "image": "KBIOSWorkspace.png",
     "buttons": [
       { "label": "Web", "url": "https://cdn.jsdelivr.net/gh/natthawatjunthawe/KBIOS@main/KBIOSWorkspaceWebDownload/KBIOSWorkspace_Web_2.3SET.zip", "icon": "fa-brands fa-html5" }
