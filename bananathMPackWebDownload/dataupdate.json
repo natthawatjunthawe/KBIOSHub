@@ -5,13 +5,19 @@
     "theme": { "bg": "#ffffff", "surface": "rgba(255,255,255,0.98)", "primary": "#242424", "accent": "#0067b8" }
   },
   "downloadApp": {
-    "title": "bananathM Pack 1.2 BETA",
+    "title": "bananathM Pack",
     "desc": "เอนจินโอเพนซอร์สขั้นสุดยอด น้ำหนักเบา ทรงพลัง และพร้อมสำหรับระดับโปรดักชัน",
     "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800",
     "buttons": [
-      { "label": "Web", "url": "https://github.com/natthawatjunthawe/KBIOS/blob/main/bananathMPackWebDownload%2FbananathMPack_Web_1.2Beta.zip", "icon": "fa-brands fa-html5" }
+      { "label": "Web", "url": "KBIOS/bananathMPackWebDownload/bananathMPack_Web_Beta.zip", "icon": "fa-brands fa-html5" }
     ]
   },
+  "versions": [
+    { "name": "bananathM Stable", "version": "v4.2.1", "url": "https://github.com/release1" },
+    { "name": "bananathM Beta", "version": "v4.3.0-beta", "url": "https://github.com/release2" },
+    { "name": "bananathM Legacy", "version": "v3.9.5", "url": "https://github.com/release3" },
+    { "name": "bananathM Classic", "version": "v2.0.0", "url": "https://github.com/release4" }
+  ],
   "footer": {
     "github": "https://github.com",
     "kbiosSpace": ""
