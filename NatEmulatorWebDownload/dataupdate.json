@@ -6,7 +6,7 @@
   },
   "downloadApp": {
     "title": "Nat Emulator 0.6 SET",
-    "desc": "An open-source engine that bundles your website files professionally — lightweight, powerful, and production-ready.",
+    "desc": "Play with simple AI. Simulate Nat AI that anyone can use. Share your own imaginative models or try your friends' imaginative models too.",
     "image": "natai.png",
     "buttons": [
       { "label": "Web", "url": "https://cdn.jsdelivr.net/gh/natthawatjunthawe/KBIOS@main/NatEmulatorWebDownload/NatEmulator_Web_0.6SET.zip", "icon": "fa-brands fa-html5" }
