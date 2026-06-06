@@ -21,7 +21,7 @@
           "label": "bananathM Pack",
           "sub": [
             {
-              "label": "Open Web App",
+              "label": "Open bananathM Pack 1.2",
               "url": "https://natthawatjunthawe.github.io/KBIOS/bananathMPackWeb/"
             }
           ]
@@ -30,7 +30,7 @@
           "label": "KBIOS Workspace",
           "sub": [
             {
-              "label": "Open Workspace",
+              "label": "Open KBIOS Workspace 2.3",
               "url": "https://natthawatjunthawe.github.io/KBIOS/KBIOSWorkspaceWeb/"
             }
           ]
@@ -39,7 +39,7 @@
           "label": "Nat AI Emulator",
           "sub": [
             {
-              "label": "Open Emulator",
+              "label": "Open Nat AI Emulator 0.6",
               "url": "https://natthawatjunthawe.github.io/KBIOS/NatEmulatorWeb/"
             }
           ]
