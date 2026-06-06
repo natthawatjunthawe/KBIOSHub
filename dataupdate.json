@@ -54,6 +54,10 @@
             {
               "label": "KBIOS Workspace",
               "url": "https://natthawatjunthawe.github.io/KBIOS/KBIOSWorkspaceWebDownload/"
+            },
+            {
+              "label": "Nat Emulator",
+              "url": "https://natthawatjunthawe.github.io/KBIOS/NatEmulatorWebDownload/"
             }
           ]
         }
