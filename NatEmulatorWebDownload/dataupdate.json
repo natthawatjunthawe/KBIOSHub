@@ -5,16 +5,16 @@
     "theme": { "bg": "#ffffff", "surface": "rgba(255,255,255,0.98)", "primary": "#242424", "accent": "#0067b8" }
   },
   "downloadApp": {
-    "title": "bananathM Pack 1.2 BETA",
+    "title": "Nat Emulator 0.6 SET",
     "desc": "An open-source engine that bundles your website files professionally — lightweight, powerful, and production-ready.",
-    "image": "bananathMPack.png",
+    "image": "natai.png",
     "buttons": [
-      { "label": "Web", "url": "https://cdn.jsdelivr.net/gh/natthawatjunthawe/KBIOS@main/bananathMPackWebDownload/bananathMPack_Web_1.2Beta.zip", "icon": "fa-brands fa-html5" }
+      { "label": "Web", "url": "https://cdn.jsdelivr.net/gh/natthawatjunthawe/KBIOS@main/NatEmulatorWebDownload/NatEmulator_Web_0.6SET.zip", "icon": "fa-brands fa-html5" }
     ]
   },
   "versions": [],
   "footer": {
-    "github": "https://github.com/natthawatjunthawe/KBIOS/blob/main/bananathMPackWebDownload%2FbananathMPack_Web_1.2Beta.zip",
+    "github": "https://github.com/natthawatjunthawe/KBIOS/blob/main/NatEmulatorWebDownload%2FNatEmulator_Web_0.6SET.zip",
     "kbiosSpace": "https://github.com/natthawatjunthawe"
   }
 }
