@@ -70,8 +70,6 @@
     ],
     "socials": [
       { "icon": "fa-brands fa-github", "url": "https://github.com/natthawatjunthawe", "tip": "KBIOS Page in GitHub" },
-      { "icon": "fa-brands fa-youtube", "url": "https://github.com/natthawatjunthawe", "tip": "KBIOS Page in YouTube" },
-      { "icon": "fa-brands fa-facebook", "url": "https://www.facebook.com/share/1DjHDbVqN1/", "tip": "KBIOS Page in Facebook" }
     ]
   }
 }
