@@ -36,10 +36,10 @@
           ]
         },
         {
-          "label": "Nat AI Emulator",
+          "label": "Nat Emulator",
           "sub": [
             {
-              "label": "Open Nat AI Emulator 0.6",
+              "label": "Open Nat Emulator 0.6",
               "url": "https://natthawatjunthawe.github.io/KBIOS/NatEmulatorWeb/"
             }
           ]
