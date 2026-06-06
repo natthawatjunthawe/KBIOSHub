@@ -4,6 +4,8 @@
     "year": 2026,
     "logo": "KBIOS.png",
     "heroBg": "Bgbrandner.jpg",
+    "heroTitle": "",
+    "heroSub": "",
     "theme": {
       "bg": "#ffffff",
       "surface": "rgba(255,255,255,0.98)",
@@ -18,26 +20,41 @@
         {
           "label": "bananathM Pack",
           "sub": [
-            { "label": "Open Web App", "url": "https://natthawatjunthawe.github.io/KBIOS/bananathMPackWeb/" }
+            {
+              "label": "Open Web App",
+              "url": "https://natthawatjunthawe.github.io/KBIOS/bananathMPackWeb/"
+            }
           ]
         },
         {
           "label": "KBIOS Workspace",
           "sub": [
-            { "label": "Open Workspace", "url": "https://natthawatjunthawe.github.io/KBIOS/KBIOSWorkspaceWeb/" }
+            {
+              "label": "Open Workspace",
+              "url": "https://natthawatjunthawe.github.io/KBIOS/KBIOSWorkspaceWeb/"
+            }
           ]
         },
         {
           "label": "Nat AI Emulator",
           "sub": [
-            { "label": "Open Emulator", "url": "https://natthawatjunthawe.github.io/KBIOS/NatEmulatorWeb/" }
+            {
+              "label": "Open Emulator",
+              "url": "https://natthawatjunthawe.github.io/KBIOS/NatEmulatorWeb/"
+            }
           ]
         },
         {
           "label": "Download",
           "sub": [
-            { "label": "bananathM Pack", "url": "https://natthawatjunthawe.github.io/KBIOS/bananathMPackWebDownload/" },
-            { "label": "KBIOS Workspace", "url": "https://natthawatjunthawe.github.io/KBIOS/KBIOSWorkspaceWebDownload/" }
+            {
+              "label": "bananathM Pack",
+              "url": "https://natthawatjunthawe.github.io/KBIOS/bananathMPackWebDownload/"
+            },
+            {
+              "label": "KBIOS Workspace",
+              "url": "https://natthawatjunthawe.github.io/KBIOS/KBIOSWorkspaceWebDownload/"
+            }
           ]
         }
       ]
@@ -65,12 +82,31 @@
   ],
   "footer": {
     "links": [
-      { "label": "นโยบายความเป็นส่วนตัว", "url": "#privacy" },
-      { "label": "ข้อตกลงการใช้งาน", "url": "#terms" }
+      {
+        "label": "นโยบายความเป็นส่วนตัว",
+        "url": "#privacy"
+      },
+      {
+        "label": "ข้อตกลงการใช้งาน",
+        "url": "#terms"
+      }
     ],
     "socials": [
-      { "icon": "fa-brands fa-github", "url": "https://github.com/natthawatjunthawe", "tip": "KBIOS Page in GitHub" },
-      { "icon": "fa-brands fa-facebook", "url": "https://www.facebook.com/share/1DjHDbVqN1/", "tip": "KBIOS Page in Facebook" }
+      {
+        "icon": "fa-brands fa-github",
+        "url": "https://github.com/natthawatjunthawe",
+        "tip": "KBIOS Page in GitHub"
+      },
+      {
+        "icon": "fa-brands fa-youtube",
+        "url": "https://github.com/natthawatjunthawe",
+        "tip": "KBIOS Page in YouTube"
+      },
+      {
+        "icon": "fa-brands fa-facebook",
+        "url": "https://www.facebook.com/share/1DjHDbVqN1/",
+        "tip": "KBIOS Page in Facebook"
+      }
     ]
   }
 }
