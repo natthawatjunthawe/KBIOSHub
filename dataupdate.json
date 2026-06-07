@@ -85,7 +85,9 @@
     }
   ],
   "footer": {
-    "links": [],
+    "links": [
+      { "label": "privacy", "url": "#privacy" }
+    ],
     "socials": [
       {
         "icon": "fa-brands fa-github",
