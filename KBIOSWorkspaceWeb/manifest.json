@@ -1,7 +1,7 @@
 {
   "name": "KBIOS Workspace",
-  "short_name": "KBIOS",
-  "description": "KBIOS Advanced Web Workspace & Emulator",
+  "short_name": "KBIOS Workspace",
+  "description": "KBIOS Web Workspace",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#f3f3f3",
