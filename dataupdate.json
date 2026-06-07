@@ -85,16 +85,7 @@
     }
   ],
   "footer": {
-    "links": [
-      {
-        "label": "นโยบายความเป็นส่วนตัว",
-        "url": "#privacy"
-      },
-      {
-        "label": "ข้อตกลงการใช้งาน",
-        "url": "#terms"
-      }
-    ],
+    "links": []
     "socials": [
       {
         "icon": "fa-brands fa-github",
